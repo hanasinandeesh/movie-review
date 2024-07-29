@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+}
+
+.content h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: fantasy;
+    color: white;
+    margin-top: 100px;
+}
+
+.container {
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.movie {
+    text-align: center;
+    width: 18%;
+}
+
+.container img {
+    width: 80%;
+    height: 300px; /* Set a fixed height for all images */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.684);
+    transition: transform 0.5s, width 0.5s;
+}
+
+.container img:hover {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+.container a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: fantasy;
+    margin-top: 10px;
+}
+
+.container a:hover {
+    color: yellow;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
